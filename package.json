@@ -25,7 +25,7 @@
   },
   "scripts": {
     "prestart": "tsc",
-    "start": "node ./bin/www",
+    "start": "node ./bin/www.js",
     "dev": "tsc && concurrently \"tsc -w\" \"lite-server\" "
   },
   "repository": {
