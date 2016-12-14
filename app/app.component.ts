@@ -1,10 +1,22 @@
 import { Component } from '@angular/core';
+import { Nickname } from './models/nickname';
 
 @Component({
   selector: 'my-app',
-  template: `<h1>Hello {{name}}</h1>`
+  // template: 'app.html'
+  templateUrl: 'app/app.html'
 })
 
 export class AppComponent {
-    public name = 'Jon';
+    public nicknames: Nickname[];
+
+    constructor() {
+      this.nicknames = [
+        { name: 'Jon' },
+        { name: 'Heidi' },
+        { name: 'Ruth' },
+        { name: 'Damian' },
+        { name: 'Gerald' },
+      ];
+    }
 }
