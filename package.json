@@ -1,0 +1,21 @@
+{
+  "name": "simplexmas",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^3.1.0",
+    "lite-server": "^2.2.2",
+    "typescript": "^2.1.4"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcludwig/simplexmas.git"
+  },
+  "author": "Jon Ludwig",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jcludwig/simplexmas/issues"
+  },
+  "homepage": "https://github.com/jcludwig/simplexmas#readme"
+}
