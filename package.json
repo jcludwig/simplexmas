@@ -11,18 +11,19 @@
     "@angular/platform-browser-dynamic": "^2.3.0",
     "@angular/router": "^3.3.0",
     "core-js": "^2.4.1",
-    "rxjs": "^5.0.1",
+    "rxjs": "5.0.0-rc.4",
     "symbol-observable": "^1.0.4",
     "systemjs": "^0.19.41",
+    "typescript": "^2.1.4",
     "zone.js": "^0.7.2"
   },
   "devDependencies": {
     "concurrently": "^3.1.0",
-    "lite-server": "^2.2.2",
-    "typescript": "^2.1.4"
+    "lite-server": "^2.2.2"
   },
   "scripts": {
-    "start": "tsc && concurrently \"tsc -w\" \"lite-server\" "
+    "start": "tsc",
+    "dev": "tsc && concurrently \"tsc -w\" \"lite-server\" "
   },
   "repository": {
     "type": "git",
