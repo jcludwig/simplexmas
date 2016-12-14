@@ -6,6 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
+  <base href="/">
 
   <!-- Polyfill(s) for older browsers -->
   <script src="node_modules/core-js/client/shim.min.js"></script>
@@ -36,20 +37,6 @@
 
 <body>
   <my-app></my-app>
-
-  <div class="row">
-    <div class="col-md-4"></div>
-    <div class="col-md-4">
-      <form>
-        <div class="form-group">
-          <label for="nickname">What is your name?</label>
-          <input type="text" class="form-control" id="nickname" placeholder="Jon">
-        </div>
-      </form>
-      <nickname-picker></nickname-picker>
-    </div>
-    <div class="col-md-4"></div>
-  </div>
 </body>
 
 </html>

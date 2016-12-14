@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Nickname } from './models/nickname';
 
 @Component({
@@ -10,9 +10,13 @@ export class NicknamePicker {
     @Input()
     public nicknames: Nickname[];
 
+    @Output()
+    public onSelected = new EventEmitter<Nickname>();
+
     public selected: Nickname;
 
     public onSelect(nickname: Nickname): void {
         this.selected = nickname;
+        this.onSelected.emit(nickname);
     }
 }

@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <form>
+            <div class="form-group">
+                <label for="nickname">What is your name?</label><br/>
+                <!--<input type="text" class="form-control" id="nickname" placeholder="Jon">-->
+                <nickname-picker [nicknames]="nicknames" (onSelected)="onNicknameSelected($event)"></nickname-picker>
+            </div>
+
+            <p>
+                <button type="button" class="btn btn-primary btn-lg" [class.disabled]="!selectedNickname" routerLink="/wishes">Next</button>
+            </p>
+        </form>
+    </div>
+    <div class="col-md-4"></div>
+</div>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Nickname } from './models/nickname';
+import { NicknameSelection } from './nicknameSelection.component';
 
 @Component({
   selector: 'my-app',
@@ -8,15 +9,5 @@ import { Nickname } from './models/nickname';
 })
 
 export class AppComponent {
-    public nicknames: Nickname[];
-
-    constructor() {
-      this.nicknames = [
-        { name: 'Jon' },
-        { name: 'Heidi' },
-        { name: 'Ruth' },
-        { name: 'Damian' },
-        { name: 'Gerald' },
-      ];
-    }
+    public selectedNickname: Nickname;
 }
